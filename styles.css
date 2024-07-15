@@ -1,0 +1,200 @@
+/* Set the base font-family */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #0f2527, #203a43, #2c5364);
+    color: #ffffff00;
+  }
+  
+  /* Navigation Bar */
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to right, #ff5f7797, #feb47b);
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.119);
+    z-index: 1000;
+    transition: background-color 0.5s, padding 0.5s; /* Smooth color transition */
+  }
+  
+  /* Change background color and padding on scroll */
+  nav.scrolled {
+    padding: 5px 0;
+  }
+  
+  /* Change background color on hover */
+  nav:hover {
+    background: linear-gradient(to right, rgb(246, 9, 9), #b109d3);
+  }
+  
+  /* Navigation Menu Items */
+  ul li a {
+    color: rgba(255, 255, 255, 255);
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: color 0.3s, background-color 0.3s; /* Smooth color transition */
+  }
+  
+  /* Hover color and change text color on hover */
+  ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: black;
+  }
+  
+  /* Button Hover */
+  .hero .btn,
+  .features .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #91ff00;
+    color: rgba(18, 8, 39, 0.475);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth color transition */
+  }
+  
+  /* Change background color on hover and text color on hover */
+  .hero .btn:hover,
+  .features .btn:hover {
+    background-color: #f97b4dcb;
+    color: #333;
+  }
+  
+  /* Container styles */
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Typography for h1 */
+  h1 {
+    margin: 0;
+    color: rgba(255, 255, 255, 255);
+    text-transform: uppercase;
+    font-size: 24px;
+  }
+  
+  /* List styles */
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  /* Margin between list items */
+  ul li {
+    margin-left: 20px;
+  }
+  
+  /* Remove margin for first list item */
+  ul li:first-child {
+    margin-left: 0;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(rgba(29, 116, 32, 0.5), rgba(11, 45, 52, 0.804)), url('https://source.unsplash.com/random/1920x1080') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 150px 0 100px;
+  }
+  
+  .hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease-out;
+  }
+  
+  .hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  /* Features Section */
+  .features {
+    background: linear-gradient(to bottom, #f8ea6bbf, #2c5364);
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .features h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #ffffff;
+    animation: fadeInDown 1s ease-out;
+    padding-right: 20px;
+  }
+  
+  /* Individual feature styles */
+  .features .feature {
+    margin-bottom: 20px;
+    text-align: left;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    animation: fadeIn 1s ease-out;
+    transition: transform 0.3s, background 0.3s;
+  }
+  
+  /* Add transform scale and change background on hover */
+  .features .feature:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to right, #f7649c, #faf8f5);
+  }
+  
+  /* Icon styles */
+  .features .feature i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #007bff;
+  }
+  
+  /* Paragraph styles for features */
+  .features .feature p {
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  /* Keyframes for animations */
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
